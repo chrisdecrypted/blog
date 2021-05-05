@@ -1,0 +1,6 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Chris Decrypted"
+theme = "ananke"
+author = "Chris Murray"
+body_classes ="arial "
