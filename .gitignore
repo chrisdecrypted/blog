@@ -1,1 +1,4 @@
 /serve
+/public
+/resources/_gen/
+hugo.linux
