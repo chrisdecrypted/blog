@@ -6,8 +6,8 @@
     {{ partial "head.html" . }}
 </head>
 <body class="bg-primary-light">
-<div class="bg-primary-dark">{{- partial "header.html" . -}}</div>
-<div class="max-w-4xl mx-auto text-center">
+<div class="bg-primary-dark rounded-b-2xl">{{- partial "header.html" . -}}</div>
+<div class="max-w-4xl mx-auto text-center text-contrast-light">
 {{ block "main" . }}
 
 <h1>{{ .Title }}</h1>
