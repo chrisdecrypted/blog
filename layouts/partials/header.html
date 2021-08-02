@@ -1,0 +1,18 @@
+    <div id="nav-border" class="py-6 mx-auto max-w-lg">
+
+            <h1 class="text-5xl text-right pb-1">🔓</h1>
+            <h1 class="-mt-1 py-2 text-5xl shadow-md bg-primary-light text-primary-dark">
+                Chris Decrypted 
+            </h1>
+            
+            <nav id="nav" class="">
+            {{ range .Site.Menus.main }}
+            <div class="hover:bg-primary-medium ">
+                <a class="text-xl w-full font-black text-primary-light text-opacity-75 hover:text-opacity-100 uppercase underline " href="{{ .URL }}">
+                {{ $text := print .Name | safeHTML }}
+                {{ $text }}
+                </a>
+            </div>
+            {{ end }}
+        </nav>
+    </div>

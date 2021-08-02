@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body class="bg-primary-light">
+<div class="bg-primary-dark">{{- partial "header.html" . -}}</div>
+<div class="max-w-4xl mx-auto text-center">
+{{ block "main" . }}
+
+<h1>{{ .Title }}</h1>
+{{ range .Pages.ByPublishDate.Reverse }}
+<p>
+    <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ partial "metadata.html" . }}
+    <a class="summary" href="{{ .RelPermalink }}">
+        <p>{{ .Summary }}</p>
+    </a>
+</p>
+
+{{ end }}
+{{ end }}
+</div>
+{{ partial "footer.html" . }}
+</body>
+</html>
+
