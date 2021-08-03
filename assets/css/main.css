@@ -5,3 +5,15 @@
 h1 {
     @apply text-5xl font-bold mt-12 mb-2
 }
+
+a {
+    @apply text-light-blue hover:opacity-80
+}
+
+body {
+    @apply font-sans
+}
+
+p {
+    @apply font-bold font-mono
+}

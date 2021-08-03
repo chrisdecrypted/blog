@@ -5,9 +5,9 @@
 <head>
     {{ partial "head.html" . }}
 </head>
-<body class="bg-primary-light">
-<div class="bg-primary-dark rounded-b-2xl">{{- partial "header.html" . -}}</div>
-<div class="max-w-4xl mx-auto text-center text-contrast-light">
+<body class="bg-black">
+<div class="bg-gradient-to-b from-primary-medium to-transparent h-full">{{- partial "header.html" . -}}</div>
+<div class="max-w-lg lg:max-w-2xl mx-auto text-left text-main">
 {{ block "main" . }}
 
 <h1>{{ .Title }}</h1>
